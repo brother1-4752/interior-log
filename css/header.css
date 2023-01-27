@@ -1,0 +1,38 @@
+header {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--black);
+}
+
+.header__left,
+.header__right {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.hide {
+  display: none;
+}
+
+.header__menu {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.header__form {
+  border: 1px solid transparent;
+}
+
+.header__form:hover {
+  border: 1px solid black;
+}
+
+.header__input {
+  text-align: center;
+}
+
+.header__clock {
+  margin-right: 15px;
+}
