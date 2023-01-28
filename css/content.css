@@ -8,16 +8,39 @@ main {
 
 .contents {
   width: 55%;
-  height: 65vh;
-  border: 1px solid black;
+  height: 17vh;
+  /* border: 1px solid black; */
+  /* margin-bottom: 20px; */
 }
 
 .contents > .content--title {
   margin-bottom: 10px;
+  font-size: 21px;
+  font-weight: 900;
 }
 
 .content {
   display: flex;
+  position: relative;
+}
+
+.content-btn {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-left {
+  left: 20px;
+  top: 0;
+}
+
+.btn-right {
+  right: 20px;
+  top: 0;
 }
 
 .content-list__container {
