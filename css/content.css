@@ -1,0 +1,33 @@
+main {
+  width: 100vw;
+  height: 92.3vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contents {
+  width: 55%;
+  height: 65vh;
+  border: 1px solid black;
+}
+
+.contents > .content--title {
+  margin-bottom: 10px;
+}
+
+.content {
+  display: flex;
+}
+
+.content-list__container {
+  width: 100%;
+  display: flex;
+  overflow-x: hidden;
+}
+
+.content-list {
+  width: 1000px;
+  display: flex;
+  border-right: 3px solid red;
+}

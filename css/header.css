@@ -30,6 +30,7 @@ header {
 }
 
 .header__input {
+  width: 150px;
   text-align: center;
 }
 
