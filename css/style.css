@@ -4,6 +4,7 @@
 @import url("sidebar.css");
 @import url("content.css");
 @import url("category.css");
+@import url("journal.css");
 
 body {
   width: 100vw;

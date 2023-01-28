@@ -8,26 +8,74 @@ main {
 
 .contents {
   width: 55%;
-  height: 65vh;
-  border: 1px solid black;
+  height: 34vh;
 }
 
 .contents > .content--title {
-  margin-bottom: 10px;
+  font-size: 21px;
+  font-weight: 900;
 }
 
 .content {
+  height: 160px;
   display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-btn {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-left {
+  left: 20px;
+  top: 65px;
+}
+
+.btn-right {
+  right: 35px;
+  top: 65px;
 }
 
 .content-list__container {
-  width: 100%;
+  width: 60vw;
   display: flex;
-  overflow-x: hidden;
+  justify-content: center;
 }
 
 .content-list {
-  width: 1000px;
+  width: 100%;
   display: flex;
-  border-right: 3px solid red;
+}
+
+.hide {
+  display: none;
+}
+
+.content-item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-right: 15px;
+}
+
+.content-item-link {
+  width: 50px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-size: 14px;
+  bottom: 5px;
+  left: 35px;
+  border-radius: 15px;
+  color: rgba(0, 0, 0, 0.8);
 }
