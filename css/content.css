@@ -8,10 +8,20 @@ main {
 
 .contents {
   width: 55%;
+<<<<<<< HEAD
   height: 34vh;
 }
 
 .contents > .content--title {
+=======
+  height: 17vh;
+  /* border: 1px solid black; */
+  /* margin-bottom: 20px; */
+}
+
+.contents > .content--title {
+  margin-bottom: 10px;
+>>>>>>> d96d523ecfeb40d20a082e9d8f5eb6c150bd292a
   font-size: 21px;
   font-weight: 900;
 }
@@ -20,8 +30,11 @@ main {
   height: 160px;
   display: flex;
   position: relative;
+<<<<<<< HEAD
   justify-content: center;
   align-items: center;
+=======
+>>>>>>> d96d523ecfeb40d20a082e9d8f5eb6c150bd292a
 }
 
 .content-btn {
@@ -35,12 +48,21 @@ main {
 
 .btn-left {
   left: 20px;
+<<<<<<< HEAD
   top: 65px;
 }
 
 .btn-right {
   right: 35px;
   top: 65px;
+=======
+  top: 0;
+}
+
+.btn-right {
+  right: 20px;
+  top: 0;
+>>>>>>> d96d523ecfeb40d20a082e9d8f5eb6c150bd292a
 }
 
 .content-list__container {
