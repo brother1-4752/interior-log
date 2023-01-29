@@ -1,3 +1,55 @@
 .sidebar {
-  display: none;
+  /* display: none; */
+  position: absolute;
+  left: 15px;
+  top: 50px;
+  height: 80vh;
+  width: 190px;
+  background-color: whitesmoke;
+}
+
+.sidebar__header {
+  display: flex;
+}
+
+.fa-chevron-right {
+  border-radius: 3px;
+  width: 25px;
+  height: 25px;
+  /* color: black; */
+}
+
+.category-row {
+  display: flex;
+}
+
+.sidebar__footer {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar__footer--logo > img {
+  width: 75px;
+  height: 60px;
+}
+
+.sidebar__category--list {
+  height: 70vh;
+  overflow-y: scroll;
+}
+
+.sidebar__category--list::-webkit-scrollbar {
+  width: 8px;
+  margin-left: 100px;
+}
+
+.sidebar__category--list::-webkit-scrollbar-thumb {
+  background: rgba(128, 128, 128, 0.8); /* 스크롤바의 색상 */
+
+  border-radius: 10px;
+  height: 50px;
+}
+
+.sidebar__category--list::-webkit-scrollbar-track {
+  background: rgba(128, 128, 128, 0.2); /*스크롤바 뒷 배경 색상*/
 }

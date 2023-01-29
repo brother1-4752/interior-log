@@ -10,4 +10,6 @@ body {
   width: 100vw;
   height: 100vh;
   font-family: "Segoe UI", sans-serif;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.1);
 }
