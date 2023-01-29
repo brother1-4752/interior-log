@@ -21,6 +21,7 @@
   width: 85%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 20px;
   background-color: rgba(0, 0, 0, 0.8);
   color: rgba(255, 255, 255, 1);
@@ -40,9 +41,14 @@
   border-bottom: 1px solid whitesmoke;
 }
 
-.journal__header--title {
+.journal__header--input {
   display: flex;
   align-items: center;
+  width: 100%;
+  text-align: center;
+  outline: none;
+  border: none;
+  border-radius: 10px;
 }
 
 .pending__container,
@@ -53,4 +59,23 @@
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
   border-radius: 10px;
+}
+
+.pending--list,
+.bought--list {
+  margin: 15px;
+}
+
+.pending--list > li,
+.bought--list > li {
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.pending--list > li > span,
+.pending--list > li > div,
+.bought--list > li > span,
+.bought--list > li > div {
+  margin-right: 10px;
+  cursor: pointer;
 }
