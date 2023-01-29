@@ -6,6 +6,7 @@
 @import url("category.css");
 @import url("journal.css");
 @import url("animation/animation.css");
+@import url("no-mobile.css");
 
 @font-face {
   font-family: "font";

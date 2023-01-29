@@ -20,7 +20,7 @@
 .category-img {
   width: 65px;
   height: 65px;
-  background-color: rgba(71, 120, 255, 0.835);
+  background-color: rgb(255, 222, 89);
   border-radius: 15px;
   margin-bottom: 10px;
   cursor: pointer;
@@ -32,7 +32,7 @@
   top: -5px;
   width: 35px;
   height: 22px;
-  background-color: rgba(255, 0, 0, 0.822);
+  background-color: rgba(255, 0, 0, 0.7);
   z-index: 99;
   border-radius: 8px;
   color: white;
