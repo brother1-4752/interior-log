@@ -19,6 +19,13 @@ header {
 .header__menu {
   margin-right: 15px;
   cursor: pointer;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.header__menu:hover {
+  animation: changeOpacity 0.8s ease-in-out forwards;
 }
 
 .header__form {

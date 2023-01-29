@@ -11,6 +11,7 @@ function onLogin(e) {
   const username = headerInput.value;
   headerUsername.innerHTML = `${username}님, 환영합니다:D`;
   sidebar__headerUsername.innerHTML = `${username}님`;
+  headerForm.classList.add(HIDE_CLASSNAME);
   headerUsername.classList.remove(HIDE_CLASSNAME);
   localStorage.setItem("user", username);
 }

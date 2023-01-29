@@ -1,11 +1,13 @@
 .sidebar {
-  /* display: none; */
   position: absolute;
   left: 15px;
   top: 50px;
   height: 80vh;
   width: 190px;
   background-color: whitesmoke;
+  border-radius: 10px;
+  animation: slide-in-left 0.8s ease-in-out forwards;
+  margin-top: 25px;
 }
 
 .sidebar__header {

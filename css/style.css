@@ -5,6 +5,7 @@
 @import url("content.css");
 @import url("category.css");
 @import url("journal.css");
+@import url("animation/animation.css");
 
 body {
   width: 100vw;
