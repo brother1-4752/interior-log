@@ -17,6 +17,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 6px;
+  cursor: pointer;
 }
 
 .category-item:hover {
