@@ -44,3 +44,17 @@ header {
 .header__clock {
   margin-right: 15px;
 }
+
+.location {
+  margin-right: 15px;
+}
+
+.temperature {
+  display: flex;
+  align-items: center;
+}
+
+.header__weather {
+  display: flex;
+  align-items: center;
+}
