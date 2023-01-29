@@ -7,10 +7,16 @@
 @import url("journal.css");
 @import url("animation/animation.css");
 
+@font-face {
+  font-family: "font";
+  src: url("../font/font.ttf") format("truetype");
+}
+
 body {
   width: 100vw;
   height: 100vh;
-  font-family: "Segoe UI", sans-serif;
   position: relative;
-  background-color: rgba(0, 0, 0, 0.1);
+  font-family: font, "Noto Sans KR", "Apple SD Gothic Neo", "맑은 고딕",
+    "Malgun Gothic", sans-serif;
+  font-weight: 700;
 }

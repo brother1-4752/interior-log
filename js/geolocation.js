@@ -15,7 +15,7 @@ navigator.geolocation.getCurrentPosition((position) => {
       const icon = data.weather[0].icon;
 
       locationSpan.innerHTML = `${cityName}`;
-      temperatureSpan.innerHTML = `${temperature}도`;
+      temperatureSpan.innerHTML = `${temperature}°C`;
 
       const iconUrl = `http://openweathermap.org/img/wn/${icon}.png`;
       const iconImg = document.createElement("img");

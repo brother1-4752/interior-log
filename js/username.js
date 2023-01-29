@@ -9,7 +9,7 @@ const HIDE_CLASSNAME = "hide";
 function onLogin(e) {
   e.preventDefault();
   const username = headerInput.value;
-  headerUsername.innerHTML = `${username}님, 환영합니다:D`;
+  headerUsername.innerHTML = `${username}님, 마음에 드는 인테리어 물품을 쇼핑일지에 담아보세요:)`;
   sidebar__headerUsername.innerHTML = `${username}님`;
   headerForm.classList.add(HIDE_CLASSNAME);
   headerUsername.classList.remove(HIDE_CLASSNAME);
@@ -21,6 +21,8 @@ if (localStorage.getItem("user") === null) {
 } else {
   headerForm.classList.add(HIDE_CLASSNAME);
   headerUsername.classList.remove(HIDE_CLASSNAME);
-  headerUsername.innerHTML = `${localStorage.getItem("user")}님, 환영합니다:D`;
+  headerUsername.innerHTML = `${localStorage.getItem(
+    "user"
+  )}님, 마음에 드는 인테리어 물품을 쇼핑일지에 담아보세요:)`;
   sidebar__headerUsername.innerHTML = `${localStorage.getItem("user")}님`;
 }
