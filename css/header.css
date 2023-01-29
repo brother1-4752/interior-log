@@ -26,7 +26,7 @@ header {
 }
 
 .header__menu:hover {
-  animation: changeOpacity 0.8s ease-in-out forwards;
+  animation: changeColorHover 0.5s ease-in-out forwards;
 }
 
 .header__form {
