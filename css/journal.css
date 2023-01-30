@@ -1,13 +1,12 @@
 .shopping-journal {
   width: 250px;
-  height: 90vh;
   position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
   right: 15px;
   top: 50px;
-  height: 90vh;
+  height: 85vh;
   border-radius: 10px;
   animation: slide-in-left 0.8s ease-in-out forwards;
   margin-top: 10px;
@@ -54,8 +53,8 @@
 .pending__container,
 .bought__container {
   width: 85%;
-  height: 350px;
-  margin-top: 35px;
+  height: 300px;
+  margin: 20px 0 15px 0;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
   border-radius: 10px;
