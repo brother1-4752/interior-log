@@ -37,7 +37,6 @@ function savePendingToDos() {
 function clickBackBtn(e) {
   const thingToBeBack = e.target.parentElement.parentElement;
   const todo = thingToBeBack.innerText;
-  console.log(todo);
   const backTodoObj = {
     text: todo,
     id: thingToBeBack.id,
@@ -45,7 +44,7 @@ function clickBackBtn(e) {
   PENDING_TODOS.push(backTodoObj);
   paintPendingTodos(backTodoObj);
 
-  BOUGHT_TODOS = BOUGHT_TODOS.filter((t) => t.id !== thingToBeBack.id);
+  // BOUGHT_TODOS = BOUGHT_TODOS.filter((t) => t.id !== thingToBeBack.id);
 
   PENDING_TODOS = PENDING_TODOS.filter(
     (t) => t.id !== parseInt(thingToBeBack.id)
@@ -85,12 +84,16 @@ function clickDoneBtn(e) {
   BOUGHT_TODOS.push(doneTodoObj);
   paintBoughtTodos(doneTodoObj);
 
+  BOUGHT_TODOS = BOUGHT_TODOS.filter(
+    (t) => t.id !== parseInt(thingToBeDone.id)
+  );
+
   PENDING_TODOS = PENDING_TODOS.filter(
     (t) => t.id !== parseInt(thingToBeDone.id)
   );
   thingToBeDone.remove();
-  saveBoughtToDos();
   savePendingToDos();
+  saveBoughtToDos();
 }
 
 function clickDeleteBtn(e) {
@@ -136,6 +139,7 @@ function submitJournalForm(e) {
   PENDING_TODOS.push(newTodoObj);
   paintPendingTodos(newTodoObj);
   savePendingToDos();
+  saveBoughtToDos();
 }
 
 plusBtn.addEventListener("click", showContainer);

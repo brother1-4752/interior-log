@@ -1,9 +1,18 @@
+@keyframes changeOpacity {
+  from {
+  }
+  to {
+    background-color: rgba(128, 128, 128, 0.547);
+    color: white;
+  }
+}
+
 @keyframes changeColorHover {
   from {
     background-color: rgba(255, 255, 255, 0.8);
   }
   to {
-    background-color: rgba(128, 128, 128, 0.4);
+    background-color: rgba(185, 185, 185, 0.4);
   }
 }
 
