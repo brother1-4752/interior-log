@@ -1,14 +1,21 @@
 const menus = document.querySelectorAll(".category-item");
 const pages = document.querySelectorAll(".contents");
-const covertedPages = Array.from(pages);
+let covertedPages = Array.from(pages);
 
 function switchScreen(e) {
   const title = e.target.parentNode.querySelector("h3").innerText;
-  console.log(title);
-  //   const filteredPages = covertedPages.filter((page, title) => {
+  //   console.log("두번쨰", title);
+
+  covertedPages.forEach((page) => {
+    if (page.children[0].innerText === title) {
+      console.log(title);
+    }
+  });
+  //   console.log(title);
+  //   covertedPages.filter((page, title) => {
   //     page.classList.contains(title);
   //   });
-  //   console.log(filteredPages);
+  // console.log(covertedPages);
 }
 
 menus.forEach((menu) => {
