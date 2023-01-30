@@ -34,14 +34,27 @@ function savePendingToDos() {
   localStorage.setItem(PENDING_KEY, JSON.stringify(PENDING_TODOS));
 }
 
-// function clickBackBtn(e) {
-//   const thingToBeBack = e.target.parentElement.parentElement;
-//   pendingList.appendChild(thingToBeBack);
-//   e.target.parentElement.classList.add(HIDE_CLASSNAME);
-//   e.target.parentElement.previousElementSibling.classList.remove(
-//     HIDE_CLASSNAME
-//   );
-// }
+function clickBackBtn(e) {
+  const thingToBeBack = e.target.parentElement.parentElement;
+  const todo = thingToBeBack.innerText;
+  console.log(todo);
+  const backTodoObj = {
+    text: todo,
+    id: thingToBeBack.id,
+  };
+  PENDING_TODOS.push(backTodoObj);
+  paintPendingTodos(backTodoObj);
+
+  BOUGHT_TODOS = BOUGHT_TODOS.filter((t) => t.id !== thingToBeBack.id);
+
+  PENDING_TODOS = PENDING_TODOS.filter(
+    (t) => t.id !== parseInt(thingToBeBack.id)
+  );
+
+  thingToBeBack.remove();
+  savePendingToDos();
+  saveBoughtToDos();
+}
 
 function paintBoughtTodos(obj) {
   const deleteBtn = document.createElement("div");
@@ -58,7 +71,7 @@ function paintBoughtTodos(obj) {
   deleteBtn.innerHTML = `<i class="fa-solid fa-trash"></i>`;
   deleteBtn.addEventListener("click", clickDeleteBtn);
   backBtn.innerHTML = `<i class="fa-solid fa-left-long"></i>`;
-  // backBtn.addEventListener("click", clickbackBtn);
+  backBtn.addEventListener("click", clickBackBtn);
   boughtList.appendChild(boughtItem);
 }
 
@@ -82,17 +95,14 @@ function clickDoneBtn(e) {
 
 function clickDeleteBtn(e) {
   const thingToDelete = e.target.parentElement.parentElement;
-  console.dir(thingToDelete);
   PENDING_TODOS = PENDING_TODOS.filter(
     (todo) => todo.id !== parseInt(thingToDelete.id)
   );
 
-  BOUGHT_TODOS = BOUGHT_TODOS.filter(
-    (todo) => todo.id !== parseInt(thingToDelete.id)
-  );
+  BOUGHT_TODOS = BOUGHT_TODOS.filter((todo) => todo.id !== thingToDelete.id);
+  thingToDelete.remove();
   savePendingToDos();
   saveBoughtToDos();
-  thingToDelete.remove();
 }
 
 function paintPendingTodos(newObj) {
@@ -133,9 +143,16 @@ boughtBtn.addEventListener("click", showContainer);
 journalForm.addEventListener("submit", submitJournalForm);
 
 const savedPendingToDos = localStorage.getItem(PENDING_KEY);
+const savedBoughtToDos = localStorage.getItem(BOUGHT_KEY);
 
 if (savedPendingToDos !== null) {
   const parsedPendingToDos = JSON.parse(savedPendingToDos);
   PENDING_TODOS = parsedPendingToDos;
   parsedPendingToDos.forEach(paintPendingTodos);
+}
+
+if (savedBoughtToDos !== null) {
+  const parsedBoughtToDos = JSON.parse(savedBoughtToDos);
+  BOUGHT_TODOS = parsedBoughtToDos;
+  parsedBoughtToDos.forEach(paintBoughtTodos);
 }
