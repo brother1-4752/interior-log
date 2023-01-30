@@ -1,7 +1,7 @@
 @media screen and (max-width: 1250px) {
   .no-mobile {
-    display: flex;
-    z-index: 200;
+    /* display: flex;
+    z-index: 200; */
     position: absolute;
     top: 0;
     width: 100vw;
