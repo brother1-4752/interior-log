@@ -8,7 +8,7 @@ main {
 
 .contents {
   width: 55%;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .contents > .content--title {
@@ -18,7 +18,6 @@ main {
 }
 
 .content {
-  height: 160px;
   display: flex;
   position: relative;
   justify-content: center;
@@ -32,6 +31,7 @@ main {
   border-radius: 50%;
   border: none;
   cursor: pointer;
+  background-color: rgba(128, 128, 128, 0.547);
   color: white;
   font-size: 20px;
 }
@@ -42,21 +42,20 @@ main {
 
 .btn-left {
   left: 20px;
-  margin-left: 15px;
+  z-index: 200;
 }
 
 .btn-right {
-  right: 20px;
-  margin-right: 15px;
+  right: 0;
 }
 
 .btn-left,
 .btn-right {
-  top: 40%;
+  top: 35%;
 }
 
 .content-list__container {
-  width: 60vw;
+  width: 55vw;
   display: flex;
   justify-content: center;
 }
@@ -72,22 +71,39 @@ main {
 
 .content-item {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-end;
   position: relative;
-  margin-right: 15px;
+  margin: 0 15px 50px 0;
 }
 
 .content-item-link {
-  width: 50px;
+  padding: 5px 25px;
   height: 20px;
-  background-color: rgba(255, 255, 255, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
   font-size: 14px;
-  bottom: 5px;
-  left: 35px;
+  /* bottom: 5px;
+  left: 40%; */
   border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
   color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 5px;
+}
+
+.content-item-bookmark {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-size: 12px;
+  bottom: 5px;
+  right: 5px;
+  border-radius: 10px;
+  color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
 }

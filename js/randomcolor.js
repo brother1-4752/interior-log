@@ -11,15 +11,15 @@ const randomNumber = Math.floor(Math.random() * colors.length);
 const journalHeader = document.querySelector(".journal__header");
 const pendingContainer = document.querySelector(".pending__container");
 const boughtContainer = document.querySelector(".bought__container");
-const contentBtn = document.querySelectorAll(".content-btn");
+// const contentBtn = document.querySelectorAll(".content-btn");
 
 function changeThemeColor() {
   journalHeader.style.backgroundColor = colors[randomNumber];
   pendingContainer.style.backgroundColor = colors[randomNumber];
   boughtContainer.style.backgroundColor = colors[randomNumber];
-  contentBtn.forEach((btn) => {
-    btn.style.backgroundColor = colors[randomNumber];
-  });
+  // contentBtn.forEach((btn) => {
+  //   btn.style.backgroundColor = colors[randomNumber];
+  // });
 }
 
 window.addEventListener("load", changeThemeColor);
