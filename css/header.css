@@ -3,6 +3,7 @@ header {
   display: flex;
   justify-content: space-between;
   color: var(--black);
+  border-bottom: 1px solid var(--black);
 }
 
 .header__left,
@@ -19,6 +20,13 @@ header {
 .header__menu {
   margin-right: 15px;
   cursor: pointer;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.header__menu:hover {
+  animation: changeColorHover 0.5s ease-in-out forwards;
 }
 
 .header__form {
@@ -36,4 +44,18 @@ header {
 
 .header__clock {
   margin-right: 15px;
+}
+
+.location {
+  margin-right: 15px;
+}
+
+.temperature {
+  display: flex;
+  align-items: center;
+}
+
+.header__weather {
+  display: flex;
+  align-items: center;
 }

@@ -5,9 +5,19 @@
 @import url("content.css");
 @import url("category.css");
 @import url("journal.css");
+@import url("animation/animation.css");
+@import url("no-mobile.css");
+
+@font-face {
+  font-family: "font";
+  src: url("../font/font.ttf") format("truetype");
+}
 
 body {
   width: 100vw;
   height: 100vh;
-  font-family: "Segoe UI", sans-serif;
+  position: relative;
+  font-family: font, "Noto Sans KR", "Apple SD Gothic Neo", "맑은 고딕",
+    "Malgun Gothic", sans-serif;
+  font-weight: 700;
 }
