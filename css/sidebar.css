@@ -2,7 +2,7 @@
   position: absolute;
   left: 15px;
   top: 50px;
-  height: 90vh;
+  height: 85vh;
   width: 250px;
   border-radius: 10px;
   animation: slide-in-left 0.8s ease-in-out forwards;
@@ -30,17 +30,17 @@
 }
 
 .sidebar__footer {
+  height: 150px;
   display: flex;
   align-items: center;
 }
 
 .sidebar__footer--logo > img {
-  width: 150px;
-  height: 120px;
+  height: 140px;
 }
 
 .sidebar__category--list {
-  height: 75vh;
+  height: 60vh;
   overflow-y: scroll;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   border-top: 1px solid rgba(0, 0, 0, 0.2);
