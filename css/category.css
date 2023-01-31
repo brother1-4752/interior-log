@@ -5,7 +5,7 @@
   justify-content: space-evenly;
   align-items: center;
   zoom: 1.2;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 .category > .category-item {
