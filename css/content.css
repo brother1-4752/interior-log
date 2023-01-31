@@ -69,6 +69,10 @@ main {
   display: none;
 }
 
+.show {
+  display: block;
+}
+
 .content-item {
   display: flex;
   justify-content: center;

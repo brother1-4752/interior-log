@@ -4,18 +4,21 @@ let covertedPages = Array.from(pages);
 
 function switchScreen(e) {
   const title = e.target.parentNode.querySelector("h3").innerText;
-  //   console.log("두번쨰", title);
 
   covertedPages.forEach((page) => {
-    if (page.children[0].innerText === title) {
-      console.log(title);
+    if (
+      page.children[0].innerText === title &&
+      page.classList.contains("hide")
+    ) {
+      let removeCurrentPage = covertedPages.filter((page) =>
+        page.classList.contains("show")
+      );
+      removeCurrentPage[0].classList.remove("show");
+      removeCurrentPage[0].classList.add("hide");
+      page.classList.remove("hide");
+      page.classList.add("show");
     }
   });
-  //   console.log(title);
-  //   covertedPages.filter((page, title) => {
-  //     page.classList.contains(title);
-  //   });
-  // console.log(covertedPages);
 }
 
 menus.forEach((menu) => {
