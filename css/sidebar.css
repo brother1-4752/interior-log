@@ -2,7 +2,6 @@
   position: absolute;
   left: 15px;
   top: 50px;
-  height: 85vh;
   width: 250px;
   border-radius: 10px;
   animation: slide-in-left 0.8s ease-in-out forwards;
@@ -23,6 +22,7 @@
   align-items: center;
   margin: 5px 0 0 5px;
   zoom: 1.3;
+  cursor: pointer;
 }
 
 .category-row:hover {
