@@ -1,7 +1,7 @@
 @media screen and (max-width: 1300px) {
   .no-mobile {
-    display: flex;
-    z-index: 200;
+    /* display: flex;
+    z-index: 200; */
     position: absolute;
     top: 0;
     width: 100vw;
@@ -9,6 +9,21 @@
     background-color: tomato;
     align-items: center;
     justify-content: center;
+  }
+
+  header,
+  .sidebar {
+    zoom: 0.9;
+  }
+
+  .content--title {
+    margin-left: 35px;
+  }
+
+  .contents,
+  .shopping-journal,
+  .category {
+    zoom: 0.9;
   }
 }
 
