@@ -85,12 +85,19 @@ main {
   align-items: center;
   position: absolute;
   font-size: 14px;
-  /* bottom: 5px;
-  left: 40%; */
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.8);
   color: rgba(0, 0, 0, 0.8);
   margin-bottom: 5px;
+}
+
+.content-item-link > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.content-item-link:hover {
+  animation: changeOpacity 0.5s ease-in-out forwards;
 }
 
 .content-item-bookmark {
@@ -106,4 +113,5 @@ main {
   border-radius: 10px;
   color: rgba(0, 0, 0, 0.8);
   background-color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
 }
